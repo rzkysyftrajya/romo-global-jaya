@@ -153,7 +153,7 @@ export function HeroSection() {
             <div className="grid grid-cols-3 gap-8 md:gap-16">
               <div>
                 <p className="font-display text-4xl md:text-5xl font-semibold text-primary">
-                  2+
+                  3
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
                   Tahun Pengalaman
@@ -161,7 +161,7 @@ export function HeroSection() {
               </div>
               <div>
                 <p className="font-display text-4xl md:text-5xl font-semibold text-accent">
-                  50+
+                  30+
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
                   Unit Armada
@@ -169,7 +169,7 @@ export function HeroSection() {
               </div>
               <div>
                 <p className="font-display text-4xl md:text-5xl font-semibold text-foreground">
-                  5K+
+                  5000+
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
                   Pelanggan Puas

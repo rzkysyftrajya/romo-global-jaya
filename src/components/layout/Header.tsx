@@ -52,6 +52,9 @@ export function Header() {
               alt="CV. ROMO GLOBAL JAYA"
               className="h-12 lg:h-14 w-auto object-contain"
             />
+            <span className="text-base sm:text-lg lg:text-xl font-bold text-foreground tracking-wide">
+              CV. ROMO GLOBAL JAYA
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
