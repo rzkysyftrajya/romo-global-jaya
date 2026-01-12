@@ -109,7 +109,7 @@ export function Header() {
         <div
           className={cn(
             "lg:hidden overflow-hidden transition-all duration-500 ease-out",
-            isMobileMenuOpen ? "max-h-[400px] pb-6" : "max-h-0"
+            isMobileMenuOpen ? "h-auto min-h-[500px] pb-6" : "h-0"
           )}
         >
           <nav className="flex flex-col gap-2 pt-4 border-t border-border/50">
@@ -118,17 +118,22 @@ export function Header() {
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "text-base font-medium transition-colors duration-200 py-3 px-4",
+                  "text-lg font-bold transition-colors duration-200 py-4 px-4 rounded-lg",
                   location.pathname === item.href
-                    ? "text-foreground bg-card/50"
-                    : "text-muted-foreground hover:text-foreground hover:bg-card/30"
+                    ? "text-foreground bg-card/70 shadow-sm"
+                    : "text-muted-foreground hover:text-foreground hover:bg-card/50"
                 )}
               >
                 {item.name}
               </Link>
             ))}
             <div className="pt-4 mt-2 border-t border-border/50 px-4">
-              <Button variant="whatsapp" size="lg" className="w-full" asChild>
+              <Button
+                variant="whatsapp"
+                size="xl"
+                className="w-full font-bold shadow-lg"
+                asChild
+              >
                 <a
                   href={whatsappLink}
                   target="_blank"
