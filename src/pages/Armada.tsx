@@ -157,7 +157,7 @@ const Armada = () => {
                       <div className="text-right">
                         <Button variant="whatsapp" size="sm" asChild>
                           <a
-                            href={`https://wa.me/6281380300065?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20informasi%20tentang%20${encodeURIComponent(
+                            href={`https://wa.me/628561433002?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20informasi%20tentang%20${encodeURIComponent(
                               vehicles.find((v) => v.id === "fortuner")?.name ||
                                 ""
                             )}`}
@@ -319,7 +319,7 @@ const Armada = () => {
                               asChild
                             >
                               <a
-                                href={`https://wa.me/6281380300065?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20pemesanan%20${encodeURIComponent(
+                                href={`https://wa.me/628561433002?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20pemesanan%20${encodeURIComponent(
                                   vehicle.name
                                 )}`}
                                 target="_blank"
@@ -361,7 +361,7 @@ const Armada = () => {
               </p>
               <Button variant="whatsapp" size="xl" asChild>
                 <a
-                  href="https://wa.me/6281380300065?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20konsultasi%20tentang%20rental%20mobil."
+                  href="https://wa.me/628561433002?text=Halo%20CV.ROMO%20GLOBAL%20JAYA%2C%20saya%20ingin%20konsultasi%20tentang%20rental%20mobil."
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -35,7 +35,7 @@ export function HeroSection() {
   const whatsappMessage = encodeURIComponent(
     "Halo CV.ROMO GLOBAL JAYA, saya ingin memesan rental mobil."
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   return (
     <section

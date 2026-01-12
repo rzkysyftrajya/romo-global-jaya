@@ -4,7 +4,7 @@ export function WhatsAppButton() {
   const whatsappMessage = encodeURIComponent(
     "Halo CV.ROMO GLOBAL JAYA, saya ingin menanyakan tentang rental mobil."
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   return (
     <a

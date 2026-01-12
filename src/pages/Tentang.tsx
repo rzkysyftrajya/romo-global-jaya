@@ -26,7 +26,7 @@ const Tentang = () => {
   const whatsappMessage = encodeURIComponent(
     "Halo CV.ROMO GLOBAL JAYA, saya ingin mengetahui lebih lanjut tentang layanan Anda."
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   const stats = [
     { number: "2+", label: "Tahun Pengalaman", icon: Clock },

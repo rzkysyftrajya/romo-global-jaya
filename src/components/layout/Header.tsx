@@ -32,7 +32,7 @@ export function Header() {
   const whatsappMessage = encodeURIComponent(
     "Halo CV.ROMO GLOBAL JAYA, saya ingin menanyakan tentang rental mobil."
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   return (
     <header
@@ -78,11 +78,11 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-6">
             <a
-              href="tel:+6281380300065"
+              href="tel:+628561433002"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>0813-8030-0065</span>
+              <span>0856-1433-002</span>
             </a>
             <Button variant="whatsapp" size="default" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">

@@ -56,7 +56,7 @@ const ArmadaDetail = () => {
   const whatsappMessage = encodeURIComponent(
     `Halo CV.ROMO GLOBAL JAYA, saya ingin memesan ${vehicle.name}. Mohon informasi ketersediaan dan harga.`
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   const highlights = [
     { icon: Shield, label: "Asuransi Lengkap", desc: "All-risk coverage" },

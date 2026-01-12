@@ -113,7 +113,7 @@ export function FleetPreviewSection() {
                     Lihat Detail
                   </Link>
                   <a
-                    href={`https://wa.me/6281380300065?text=${whatsappMessage(
+                    href={`https://wa.me/628561433002?text=${whatsappMessage(
                       vehicle.name
                     )}`}
                     target="_blank"
@@ -147,7 +147,7 @@ export function FleetPreviewSection() {
                   </div>
                   <Button variant="whatsapp" size="sm" asChild>
                     <a
-                      href={`https://wa.me/6281380300065?text=${whatsappMessage(
+                      href={`https://wa.me/628561433002?text=${whatsappMessage(
                         vehicle.name
                       )}`}
                       target="_blank"

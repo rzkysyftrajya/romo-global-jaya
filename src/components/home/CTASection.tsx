@@ -26,7 +26,7 @@ export function CTASection() {
   const whatsappMessage = encodeURIComponent(
     "Halo CV.ROMO GLOBAL JAYA, saya ingin memesan rental mobil."
   );
-  const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
   return (
     <section
@@ -81,9 +81,9 @@ export function CTASection() {
               </a>
             </Button>
             <Button variant="outline-light" size="xl" asChild>
-              <a href="tel:+6281380300065">
+              <a href="tel:+628561433002">
                 <Phone className="w-5 h-5 mr-2" />
-                0813-8030-0065
+                0856-1433-002
               </a>
             </Button>
           </div>

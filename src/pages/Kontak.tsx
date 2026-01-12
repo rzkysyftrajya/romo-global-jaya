@@ -34,7 +34,7 @@ const Kontak = () => {
     const whatsappMessage = encodeURIComponent(
       `Halo CV.ROMO GLOBAL JAYA,\n\nNama: ${formData.name}\nTelepon: ${formData.phone}\nEmail: ${formData.email}\n\nPesan:\n${formData.message}`
     );
-    const whatsappLink = `https://wa.me/6281380300065?text=${whatsappMessage}`;
+    const whatsappLink = `https://wa.me/628561433002?text=${whatsappMessage}`;
 
     setTimeout(() => {
       window.open(whatsappLink, "_blank");
@@ -68,8 +68,8 @@ const Kontak = () => {
     {
       icon: Phone,
       title: "Telepon",
-      content: "0813-8030-0065",
-      link: "tel:+6281380300065",
+      content: "0856-1433-002",
+      link: "tel:+628561433002",
     },
     {
       icon: Mail,
@@ -115,7 +115,7 @@ const Kontak = () => {
         <title>Kontak - CV.ROMO GLOBAL JAYA</title>
         <meta
           name="description"
-          content="Hubungi CV.ROMO GLOBAL JAYA untuk rental mobil di Jakarta Barat. Alamat: Jl. Husain Sastranegara, Kalideres. Telepon: 0813-8030-0065. Layanan 24 jam."
+          content="Hubungi CV.ROMO GLOBAL JAYA untuk rental mobil di Jakarta Barat. Alamat: Jl. Husain Sastranegara, Kalideres. Telepon: 0856-1433-002. Layanan 24 jam."
         />
       </Helmet>
 
@@ -182,7 +182,7 @@ const Kontak = () => {
               {quickActions.map((action, index) => (
                 <motion.a
                   key={action.label}
-                  href={`https://wa.me/6281380300065?text=${encodeURIComponent(
+                  href={`https://wa.me/628561433002?text=${encodeURIComponent(
                     action.message
                   )}`}
                   target="_blank"
@@ -268,7 +268,7 @@ const Kontak = () => {
                     asChild
                   >
                     <a
-                      href="https://wa.me/6281380300065?text=Halo%20CV.ROMO%20GLOBAL%20JAYA"
+                      href="https://wa.me/628561433002?text=Halo%20CV.ROMO%20GLOBAL%20JAYA"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
