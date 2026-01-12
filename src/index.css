@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@layer base {
+  :root {
+    /* CV.ROMO GLOBAL JAYA - Brand Colors: Black, Yellow, Blue (Logo) */
+    --background: 0 0% 5%; /* Deep Black #0D0D0D */
+    --foreground: 0 0% 95%; /* Off White #F2F2F2 */
+
+    --card: 0 0% 10%; /* Dark Gray #1A1A1A */
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 45 100% 50%; /* Bright Yellow #FFD700 */
+    --primary-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --secondary: 220 73% 17%; /* Deep Navy Blue #0B3D91 */
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 220 100% 50%; /* Bright Blue #0066FF */
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom brand tokens */
+    --midnight: 0 0% 5%;
+    --graphite: 0 0% 10%;
+    --stone: 220 73% 17%;
+    --sand: 220 73% 22%;
+    --olive: 220 100% 50%;
+    --emerald: 45 100% 50%;
+    --text-warm: 0 0% 95%;
+    --text-dark: 0 0% 0%;
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 220 100% 50%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 45 100% 50%;
+  }
+
+  .section-stone {
+    --background: 220 73% 17%;
+    --foreground: 0 0% 95%;
+    --card: 220 73% 22%;
+    --card-foreground: 0 0% 95%;
+    --muted: 220 73% 25%;
+    --muted-foreground: 0 0% 70%;
+    --border: 220 73% 25%;
+  }
+
+  .section-sand {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 95%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+    --border: 0 0% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer components {
+  .section-dark {
+    @apply bg-background text-foreground;
+  }
+
+  .section-graphite {
+    @apply bg-card text-foreground;
+  }
+
+  .section-light {
+    @apply bg-secondary text-secondary-foreground;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .heading-display {
+    font-family: "Playfair Display", serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight;
+  }
+
+  .heading-cinematic {
+    font-family: "Playfair Display", serif;
+    @apply text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-none;
+  }
+
+  .heading-section {
+    font-family: "Playfair Display", serif;
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight;
+  }
+
+  .heading-card {
+    font-family: "Playfair Display", serif;
+    @apply text-xl md:text-2xl font-medium;
+  }
+
+  .text-body {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .text-caption {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .divider-yellow {
+    @apply h-px bg-primary/60;
+  }
+
+  .divider-blue {
+    @apply h-px bg-accent/60;
+  }
+
+  .divider-vertical {
+    @apply w-px bg-accent/60;
+  }
+
+  /* Cinematic card styles */
+  .card-cinematic {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 p-8 md:p-10 lg:p-12;
+  }
+
+  /* Split section layouts */
+  .split-section {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-0;
+  }
+
+  .split-content {
+    @apply flex flex-col justify-center p-8 md:p-12 lg:p-16 xl:p-20;
+  }
+
+  .split-visual {
+    @apply relative min-h-[400px] lg:min-h-[600px];
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-parallax {
+    will-change: transform;
+    transition: transform 0.1s linear;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-2;
+    box-shadow: 0 25px 50px -12px rgba(255, 215, 0, 0.2);
+  }
+
+  .hover-zoom {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .hover-zoom:hover {
+    @apply scale-105;
+  }
+
+  .image-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .image-overlay::after {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent;
+  }
+
+  /* Gradient overlays */
+  .gradient-dark-left {
+    background: linear-gradient(
+      to right,
+      hsl(var(--background)) 0%,
+      hsl(var(--background) / 0.9) 30%,
+      transparent 70%
+    );
+  }
+
+  .gradient-dark-bottom {
+    background: linear-gradient(
+      to top,
+      hsl(var(--background)) 0%,
+      hsl(var(--background) / 0.6) 40%,
+      transparent 100%
+    );
+  }
+
+  .gradient-cinematic {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--graphite)) 50%,
+      hsl(var(--background)) 100%
+    );
+  }
+
+  /* Yellow accent glow */
+  .glow-yellow {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+  }
+}
